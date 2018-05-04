@@ -1,0 +1,112 @@
+ENGLISH VERSION:
+- Step 1: Install module 'react-navigation'->Use StackNavigator, TabNavigator
+npm install --save react-navigation
+- Step 2: Install module 'react-native-vector-icons'->Use icon
+npm install --save react-native-vector-icons
+- Step 3: Link 'react-native-vector-icons' to project:
+react-native link react-native-vector-icons
+- Step 4: Modify file 'screenmanager.js'
++ Add stacks, tabs
++ Import type icon:
+
+// import icon types
+import Entypo from 'react-native-vector-icons/Entypo';
+import EvilIcons from 'react-native-vector-icons/EvilIcons';
+import Feather from 'react-native-vector-icons/Feather';
+import FontAwesome from 'react-native-vector-icons/FontAwesome';
+import Foundation from 'react-native-vector-icons/Foundation';
+import Ionicons from 'react-native-vector-icons/Ionicons';
+import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
+import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
+import SimpleLineIcons from 'react-native-vector-icons/SimpleLineIcons';
+import Octicons from 'react-native-vector-icons/Octicons';
+import Zocial from 'react-native-vector-icons/Zocial';
+
++ Configuration (tabBarIcon, tabBarPostion, tabBarOptions)
+- Step 5: Apply tab navigator
+
+-------------If you see this error:-------------
+- Error: While resolving module `react-native-vector-icons/Entypo`, the Haste package `react-native-vector-icons` was found.
+- Solution: Add file 'rn-cli.config.js' to root directory
+
+const blacklist = require('metro/src/blacklist')
+  module.exports = {
+    getBlacklistRE () {
+      return blacklist([/react-native\/local-cli\/core\/__fixtures__.*/])
+    },
+  }
+
+-------------End fix error-------------
+
+Note:
+-------------TYPEICON-------------
+			Entypo
+			EvilIcons
+			Feather
+			FontAwesome
+			Foundation
+			Ionicons
+			MaterialCommunityIcons
+			MaterialIcons
+			SimpleLineIcons
+			Octicons
+			Zocial
+-------------END TYPEICON-------------
+
+VIETNAMESE VERSION:
+- Bước 1: Cài module 'react-navigation'->Sử dụng StackNavigator, TabNavigator
+npm install --save react-navigation
+- Bước 2: Cài module 'react-native-vector-icons'->Sử dụng icon
+npm install --save react-native-vector-icons
+- Bước 3: Liên kết 'react-native-vector-icons' với project:
+react-native link react-native-vector-icons
+- Bước 4: Chỉnh file 'screenmanager.js'
++ Thêm stacks, tabs
++ Thêm loại icon:
+
+// import icon types
+import EntypoIcons from 'react-native-vector-icons/Entypo';
+import EvilIcons from 'react-native-vector-icons/EvilIcons';
+import FeatherIcons from 'react-native-vector-icons/Feather';
+import FontAwesomeIcons from 'react-native-vector-icons/FontAwesome';
+import FoundationIcons from 'react-native-vector-icons/Foundation';
+import Ionicons from 'react-native-vector-icons/Ionicons';
+import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
+import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
+import SimpleLineIcons from 'react-native-vector-icons/SimpleLineIcons';
+import Octicons from 'react-native-vector-icons/Octicons';
+import ZocialIcons from 'react-native-vector-icons/Zocial';
+
++ Configuration (tabBarIcon, tabBarPostion, tabBarOptions)
+- Bước 5: Dùng tab navigator
+
+-------------Nếu bạn thấy LỖI này:-------------
+- Error: While resolving module `react-native-vector-icons/Entypo`, the Haste package `react-native-vector-icons` was found.
+- Giải pháp: Thêm file 'rn-cli.config.js' vào thư mục gốc
+
+const blacklist = require('metro/src/blacklist')
+  module.exports = {
+    getBlacklistRE () {
+      return blacklist([/react-native\/local-cli\/core\/__fixtures__.*/])
+    },
+  }
+  
+-------------Kết thúc sữa lỗi-------------
+
+Lưu ý:
+-------------Các loại icon-------------
+			Entypo
+			EvilIcons
+			Feather
+			FontAwesome
+			Foundation
+			Ionicons
+			MaterialCommunityIcons
+			MaterialIcons
+			SimpleLineIcons
+			Octicons
+			Zocial
+-------------Kết thúc Các loại icon-------------
+
+---DONE :D---
+---Quang Vi---
